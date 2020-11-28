@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const { getUsers, getUsersById, addUser } = require("./database/queries");
+const { getUsers, addUser, getUserById } = require("./models/Users");
 const { validate, boomify } = require("./utils");
 
 /*
