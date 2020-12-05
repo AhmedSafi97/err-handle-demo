@@ -16,7 +16,7 @@ router.post("/users", (req, res, next) => {});
 router.get("/users/:id", (req, res, next) => {});
 
 // requesting none-existing resource
-router.use("*", (req, res, next) => {});
+router.use((req, res, next) => {});
 
 // error middleware
 router.use((err, req, res, next) => {});
